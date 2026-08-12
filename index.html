@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>For You ❤️</title>
+  <meta name="theme-color" content="#120914">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <main>
+    <section id="lock" class="screen active">
+      <div class="glass card">
+        <div class="heart">♥</div>
+        <p class="eyebrow">A little surprise for you</p>
+        <h1>Only for <span>you</span> ❤️</h1>
+        <p class="muted">Enter the secret password to unlock your birthday surprise.</p>
+        <form id="unlockForm">
+          <input id="password" type="password" inputmode="numeric" placeholder="Enter password" autocomplete="off">
+          <button>Unlock my surprise ✨</button>
+        </form>
+        <p id="error" class="error"></p>
+      </div>
+    </section>
+
+    <section id="welcome" class="screen">
+      <div class="content">
+        <p class="eyebrow">Today is all about you</p>
+        <h1>Happy Birthday,<br><span>My Love</span> 🎂</h1>
+        <p class="lead">I made this little corner of the internet just for you.</p>
+        <button class="primary next" data-next="gallery">Open your surprise →</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="screen">
+      <div class="content wide">
+        <p class="eyebrow">Our little memories</p>
+        <h2>Moments I never want to forget 📸</h2>
+        <div class="gallery">
+          <figure><img src="assets/photo1.jpg" alt="Memory 1"><figcaption>Our favorite moment</figcaption></figure>
+          <figure><img src="assets/photo2.jpg" alt="Memory 2"><figcaption>A memory worth keeping</figcaption></figure>
+          <figure><img src="assets/photo3.jpg" alt="Memory 3"><figcaption>You make everything brighter</figcaption></figure>
+          <figure><img src="assets/photo4.jpg" alt="Memory 4"><figcaption>Always us ❤️</figcaption></figure>
+        </div>
+        <button class="primary next" data-next="letter">There is a letter for you 💌</button>
+      </div>
+    </section>
+
+    <section id="letter" class="screen">
+      <div class="paper">
+        <p class="eyebrow">A letter from my heart</p>
+        <h2>To the most special person in my life,</h2>
+        <p>
+          Happy Birthday, my love. ❤️<br><br>
+          I hope this new year of your life brings you endless smiles, beautiful memories,
+          and every little thing your heart wishes for. Thank you for being you, for making
+          ordinary moments feel special, and for being such an important part of my world.
+        </p>
+        <p>
+          No matter how many birthdays come and go, I want to keep making memories with you.
+          Today is your day — so smile a little extra, dream a little bigger, and remember
+          that you are deeply loved. 💕
+        </p>
+        <p class="signature">Forever yours,<br>❤️</p>
+        <button class="primary next" data-next="surprise">One last surprise →</button>
+      </div>
+    </section>
+
+    <section id="surprise" class="screen">
+      <div class="content">
+        <div class="cake">🎂</div>
+        <p class="eyebrow">The final surprise</p>
+        <h1>Make a wish,<br><span>Beautiful.</span> ✨</h1>
+        <p class="lead">May your smile stay this beautiful forever.</p>
+        <button id="wish" class="primary">Tap for your birthday magic ✨</button>
+        <div id="finalMessage" class="final-message">
+          <h2>Happy Birthday ❤️</h2>
+          <p>You are my favorite chapter, my favorite memory, and my favorite person.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="music" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
